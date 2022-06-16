@@ -146,9 +146,9 @@ def getBeijinTime():
         print("获取北京时间失败")
         return
     if min_1 != 0 and max_1 != 0:
-        user_mi = '18604515202'
+        user_mi = sys.argv[0]
         # 登录密码
-        passwd_mi = 'nanbowan11'
+        passwd_mi = sys.argv[1]
         user_list = user_mi.split('#')
         passwd_list = passwd_mi.split('#')
         if len(user_list) == len(passwd_list):        
